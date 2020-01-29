@@ -1,21 +1,22 @@
 <template>
     <form class="form-wrap" action="#">
-        <h4 class="text-white pb-20">Request a Quote</h4>
         <div class="form-select" id="service-select">
             <select>
-                <option value="1">Select Service</option>
-                <option value="2">Service One</option>
-                <option value="3">Service Two</option>
-                <option value="4">Service Three</option>
-                <option value="5">Service Four</option>
+                <option value="1">Sou operador de máquinas</option>
+                <option value="2">Sou mecanico</option>
             </select>
         </div>
-        <input type="text" class="form-control" placeholder="name">
-        <input type="phone" class="form-control" placeholder="Phone Number">
-        <input type="email" class="form-control" placeholder="Email Address">
-        <textarea name="message" id="" cols="30" rows="5" placeholder="Message"
+        <input type="text" class="form-control" placeholder="Nome">
+        <input type="phone" class="form-control" placeholder="Contato">
+        <input type="email" class="form-control" placeholder="Email">
+        <input type="email" class="form-control" placeholder="CEP">
+        <input type="email" class="form-control"
+               placeholder="Raio de atendimento (km) ou lista de cidades que posso atender">
+        <textarea name="message"  cols="30" rows="5" placeholder="Serviços que eu faço"
                   class="form-control"></textarea>
-        <button class="primary-btn">Request Free Quote</button>
+        <textarea name="message" cols="30" rows="5" placeholder="Minhas especializacoes"
+                  class="form-control"></textarea>
+        <button class="primary-btn">Enviar</button>
     </form>
 </template>
 

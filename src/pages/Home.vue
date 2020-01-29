@@ -1,21 +1,27 @@
 <template>
-    <body>
+    <div>
     <Header/>
-    <!-- start banner Area -->
     <section class="banner-area relative" id="home">
         <div class="overlay overlay-bg"></div>
         <div class="container">
-            <div class="row fullscreen d-flex align-items-center justify-content-center">
+            <div class="row fullscreen d-flex align-items-center justify-content-center" style="padding-top: 25%;
+            padding-bottom: 25%">
                 <div class="banner-content col-lg-12 col-md-12">
-                    <h6 class="text-uppercase">Don’t look further, here is the key</h6>
+                    <h6 class="text-uppercase">Deixe o trabalho pesado com a gente!</h6>
                     <h1>
-                        We’re Industrial solution
+                        Cuide das máquinas.
+                        Nós cuidamos do restante.
                     </h1>
                     <p class="text-white">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et <br> dolore magna aliqua. Ut enim ad minim. sed do eiusmod tempor incididunt.
+                        A promoção dos seus serviços para máquinas pesadas na Internet, a gestão das suas manutencoes
+                        e a comunicação com os clientes já podem ser feitas a partir de uma única ferramenta, completa para profissionais.
                     </p>
-                    <a href="#" class="primary-btn header-btn text-uppercase">Quero me cadastrar meus serviços</a>
+                    <a href="#" class="primary-btn header-btn text-uppercase" style="margin: 2px">
+                        Quero ser um especialista
+                    </a>
+                    <a href="#" class="primary-btn header-btn text-uppercase" style="margin: 2px">
+                        Quero contratar um especialista
+                    </a>
                 </div>
             </div>
         </div>
@@ -59,20 +65,15 @@
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <div class="col-lg-8 col-md-12 home-about-left">
-                    <h6>Brand new app to blow your mind</h6>
+                    <h6>Fique a vista para novos clientes</h6>
                     <h1>
-                        We’ve made a life <br>
-                        that will change you
+                        Anúncie com a gente <br>
                     </h1>
                     <p class="sub">We are here to listen from you deliver exellence</p>
                     <p class="pb-20">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                        Anúncie seu serviços para ... .
                     </p>
-                    <a class="primary-btn" href="#">Get Started Now</a>
+<!--                    <a class="primary-btn" href="#">Quero me cadastrar</a>-->
                 </div>
                 <div class="col-lg-4 col-md-12 home-about-right relative">
                     <Partner/>
@@ -219,82 +220,82 @@
     <!-- End project Area -->
 
     <!-- Start feedback Area -->
-    <section class="feedback-area section-gap relative" id="feedback">
-        <div class="overlay overlay-bg"></div>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-12 pb-30 header-text text-center">
-                    <h1 class="mb-10 text-white">Enjoy our Client’s Feedback</h1>
-                    <p class="text-white">
-                        Who are in extremely love with eco friendly system..
-                    </p>
-                </div>
-            </div>
-            <div class="row feedback-contents justify-content-center align-items-center">
-                <div class="col-lg-6 feedback-left relative d-flex justify-content-center align-items-center">
-                    <div class="overlay overlay-bg"></div>
-                    <a class="play-btn" href="https://www.youtube.com/watch?v=ARA0AxrnHdM"><img class="img-fluid"
-                                                                                                src="img/play-btn.png"
-                                                                                                alt=""></a>
-                </div>
-                <div class="col-lg-6 feedback-right">
-                    <div class="active-review-carusel">
-                        <div class="single-feedback-carusel">
-                            <div class="title d-flex flex-row">
-                                <h4 class="text-white pb-10">Fannie Rowe</h4>
-                                <div class="star">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                            </div>
-                            <p class="text-white">
-                                Accessories Here you can find the best computer accessory for your laptop, monitor,
-                                printer, scanner, speaker. Here you can find the best computer accessory for your
-                                laptop, monitor, printer, scanner, speaker.
-                            </p>
-                        </div>
-                        <div class="single-feedback-carusel">
-                            <div class="title d-flex flex-row">
-                                <h4 class="text-white pb-10">Fannie Rowe</h4>
-                                <div class="star">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                            </div>
-                            <p class="text-white">
-                                Accessories Here you can find the best computer accessory for your laptop, monitor,
-                                printer, scanner, speaker. Here you can find the best computer accessory for your
-                                laptop, monitor, printer, scanner, speaker.
-                            </p>
-                        </div>
-                        <div class="single-feedback-carusel">
-                            <div class="title d-flex flex-row">
-                                <h4 class="text-white pb-10">Fannie Rowe</h4>
-                                <div class="star">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked	"></span>
-                                </div>
-                            </div>
-                            <p class="text-white">
-                                Accessories Here you can find the best computer accessory for your laptop, monitor,
-                                printer, scanner, speaker. Here you can find the best computer accessory for your
-                                laptop, monitor, printer, scanner, speaker.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!--    <section class="feedback-area section-gap relative" id="feedback">-->
+<!--        <div class="overlay overlay-bg"></div>-->
+<!--        <div class="container">-->
+<!--            <div class="row justify-content-center">-->
+<!--                <div class="col-md-12 pb-30 header-text text-center">-->
+<!--                    <h1 class="mb-10 text-white">Enjoy our Client’s Feedback</h1>-->
+<!--                    <p class="text-white">-->
+<!--                        Who are in extremely love with eco friendly system..-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="row feedback-contents justify-content-center align-items-center">-->
+<!--                <div class="col-lg-6 feedback-left relative d-flex justify-content-center align-items-center">-->
+<!--                    <div class="overlay overlay-bg"></div>-->
+<!--                    <a class="play-btn" href="https://www.youtube.com/watch?v=ARA0AxrnHdM"><img class="img-fluid"-->
+<!--                                                                                                src="img/play-btn.png"-->
+<!--                                                                                                alt=""></a>-->
+<!--                </div>-->
+<!--                <div class="col-lg-6 feedback-right">-->
+<!--                    <div class="active-review-carusel">-->
+<!--                        <div class="single-feedback-carusel">-->
+<!--                            <div class="title d-flex flex-row">-->
+<!--                                <h4 class="text-white pb-10">Fannie Rowe</h4>-->
+<!--                                <div class="star">-->
+<!--                                    <span class="fa fa-star checked"></span>-->
+<!--                                    <span class="fa fa-star checked"></span>-->
+<!--                                    <span class="fa fa-star checked"></span>-->
+<!--                                    <span class="fa fa-star"></span>-->
+<!--                                    <span class="fa fa-star"></span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <p class="text-white">-->
+<!--                                Accessories Here you can find the best computer accessory for your laptop, monitor,-->
+<!--                                printer, scanner, speaker. Here you can find the best computer accessory for your-->
+<!--                                laptop, monitor, printer, scanner, speaker.-->
+<!--                            </p>-->
+<!--                        </div>-->
+<!--                        <div class="single-feedback-carusel">-->
+<!--                            <div class="title d-flex flex-row">-->
+<!--                                <h4 class="text-white pb-10">Fannie Rowe</h4>-->
+<!--                                <div class="star">-->
+<!--                                    <span class="fa fa-star checked"></span>-->
+<!--                                    <span class="fa fa-star checked"></span>-->
+<!--                                    <span class="fa fa-star checked"></span>-->
+<!--                                    <span class="fa fa-star checked"></span>-->
+<!--                                    <span class="fa fa-star"></span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <p class="text-white">-->
+<!--                                Accessories Here you can find the best computer accessory for your laptop, monitor,-->
+<!--                                printer, scanner, speaker. Here you can find the best computer accessory for your-->
+<!--                                laptop, monitor, printer, scanner, speaker.-->
+<!--                            </p>-->
+<!--                        </div>-->
+<!--                        <div class="single-feedback-carusel">-->
+<!--                            <div class="title d-flex flex-row">-->
+<!--                                <h4 class="text-white pb-10">Fannie Rowe</h4>-->
+<!--                                <div class="star">-->
+<!--                                    <span class="fa fa-star checked"></span>-->
+<!--                                    <span class="fa fa-star checked"></span>-->
+<!--                                    <span class="fa fa-star checked"></span>-->
+<!--                                    <span class="fa fa-star checked"></span>-->
+<!--                                    <span class="fa fa-star checked	"></span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <p class="text-white">-->
+<!--                                Accessories Here you can find the best computer accessory for your laptop, monitor,-->
+<!--                                printer, scanner, speaker. Here you can find the best computer accessory for your-->
+<!--                                laptop, monitor, printer, scanner, speaker.-->
+<!--                            </p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
     <!-- End feedback Area -->
 
 
@@ -303,10 +304,9 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12 pb-30 header-text">
-                    <h1>Latest posts from our Blog</h1>
+                    <h1>Últimos artigos do nosso blog</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        <br> labore et dolore magna aliqua.
+                        Temos a preocupação de deixar você atualizado com as melhores dicas dos nossos especialistas.
                     </p>
                 </div>
             </div>
@@ -318,7 +318,7 @@
                     <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
                         <div>
                             <img class="img-fluid" src="img/user.png" alt="">
-                            <a href="#"><span>Mark Wiens</span></a>
+                            <a href="#"><span>Carolina Petarnela</span></a>
                         </div>
                         <div class="meta">
                             13th Dec
@@ -327,7 +327,7 @@
                         </div>
                     </div>
                     <a href="#">
-                        <h4>Portable Fashion for young women</h4>
+                        <h4>Cuidados básico com a Linha Hunday</h4>
                     </a>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -342,7 +342,7 @@
                     <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
                         <div>
                             <img class="img-fluid" src="img/user.png" alt="">
-                            <a href="#"><span>Mark Wiens</span></a>
+                            <a href="#"><span>Carolina Petarnela</span></a>
                         </div>
                         <div class="meta">
                             13th Dec
@@ -351,7 +351,7 @@
                         </div>
                     </div>
                     <a href="#">
-                        <h4>Portable Fashion for young women</h4>
+                        <h4>Dicas para seguros</h4>
                     </a>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -366,7 +366,7 @@
                     <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
                         <div>
                             <img class="img-fluid" src="img/user.png" alt="">
-                            <a href="#"><span>Mark Wiens</span></a>
+                            <a href="#"><span>Carolina Petarnela</span></a>
                         </div>
                         <div class="meta">
                             13th Dec
@@ -375,7 +375,7 @@
                         </div>
                     </div>
                     <a href="#">
-                        <h4>Portable Fashion for young women</h4>
+                        <h4>Onde conseguir peças de boa qualidade</h4>
                     </a>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -389,7 +389,7 @@
         </div>
     </section>
     <Footer/>
-    </body>
+    </div>
 </template>
 
 <script>
