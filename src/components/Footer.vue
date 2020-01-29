@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-5 col-md-6 col-sm-6">
                     <div class="single-footer-widget">
-                        <h6>About Us</h6>
+                        <h6>Sobre</h6>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                             ut labore dolore magna aliqua.
@@ -15,7 +15,7 @@
                 <div class="col-lg-5  col-md-6 col-sm-6">
                     <div class="single-footer-widget">
                         <h6>Newsletter</h6>
-                        <p>Stay update with our latest</p>
+                        <p>Fique atualizado com nosso material</p>
                         <div class="" id="mc_embed_signup">
                             <form target="_blank" novalidate="true"
                                   action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
@@ -37,13 +37,12 @@
                 </div>
                 <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
                     <div class="single-footer-widget">
-                        <h6>Follow Us</h6>
-                        <p>Let us be social</p>
+                        <h6>Siga-nos</h6>
                         <div class="footer-social d-flex align-items-center">
                             <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                            <a href="#"><i class="fa fa-behance"></i></a>
+<!--                            <a href="#"><i class="fa fa-twitter"></i></a>-->
+<!--                            <a href="#"><i class="fa fa-dribbble"></i></a>-->
+<!--                            <a href="#"><i class="fa fa-behance"></i></a>-->
                         </div>
                     </div>
                 </div>
