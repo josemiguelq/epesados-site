@@ -1,0 +1,11 @@
+version: "2"
+services:
+  node:
+    container_name: site.epesados.prod
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "7778:80"
