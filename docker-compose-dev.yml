@@ -1,0 +1,19 @@
+version: "2"
+services:
+  node:
+    image: "node:8"
+    container_name: site.epesados.dev
+    user: "node"
+    working_dir: /home/node/app
+    networks:
+      - preach_dev
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./:/home/node/app
+    ports:
+      - "7777:8080"
+    command: "yarn serve"
+networks:
+  preach_dev:
+    external: true
