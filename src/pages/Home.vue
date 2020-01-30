@@ -34,7 +34,7 @@
             <div class="row">
                 <MainActivities title="Encontre especialistas" content="Nós cuidamos do ... manutencao preventiva"
                                 class-icon="lnr lnr-magic-wand"/>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="single-cat">
                         <a href="#" class="hb-sm-margin mx-auto d-block"><span
                                 class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-rocket"></span></span></a>
@@ -46,7 +46,7 @@
                 </div>
                 <MainActivities title="Avalie o serviço" content="Nós cuidamos do ... manutencao preventiva"
                                 class-icon="lnr lnr-magic-wand"/>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="single-cat">
                         <a href="#" class="hb-sm-margin mx-auto d-block"><span
                                 class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-bug"></span></span></a>

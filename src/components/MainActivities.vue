@@ -1,5 +1,5 @@
 <template>
-    <div class="col-lg-4">
+    <div class="col-lg-3">
         <div class="single-cat d-flex flex-column">
             <a href="#" class="hb-sm-margin mx-auto d-block"><span
                     class="hb hb-sm inv hb-facebook-inv"><span v-bind:class="classIcon"></span></span></a>
