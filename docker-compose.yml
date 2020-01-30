@@ -7,5 +7,10 @@ services:
       dockerfile: Dockerfile
     environment:
       - NODE_ENV=production
+    networks:
+      - epesados
     ports:
       - "7778:80"
+networks:
+  epesados:
+    external: true

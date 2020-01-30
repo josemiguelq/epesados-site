@@ -6,7 +6,7 @@ services:
     user: "node"
     working_dir: /home/node/app
     networks:
-      - preach_dev
+      - epesados
     environment:
       - NODE_ENV=development
     volumes:
@@ -15,5 +15,5 @@ services:
       - "7777:8080"
     command: "yarn serve"
 networks:
-  preach_dev:
+  epesados:
     external: true
