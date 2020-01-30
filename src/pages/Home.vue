@@ -9,8 +9,8 @@
                 <div class="banner-content col-lg-12 col-md-12">
                     <h6 class="text-uppercase">Deixe o trabalho pesado com a gente!</h6>
                     <h1>
-                        Cuide das máquinas.
-                        Nós cuidamos do restante.
+                        Cuide do seu negócio.
+                        Nós cuidamos das suas máquinas!
                     </h1>
                     <p class="text-white">
                         A promoção dos seus serviços para máquinas pesadas na Internet, a gestão das suas manutencoes
@@ -27,7 +27,6 @@
         </div>
     </section>
     <!-- End banner Area -->
-
     <!-- Start cat Area -->
     <section class="cat-area section-gap" id="feature">
         <div class="container">
