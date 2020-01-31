@@ -10,7 +10,7 @@ services:
     networks:
       - epesados
     ports:
-      - "7778:80"
+      - "80:80"
 networks:
   epesados:
     external: true

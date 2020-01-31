@@ -1,19 +1,31 @@
 version: "2"
 services:
-  node:
-    image: "node:8"
-    container_name: site.epesados.dev
-    user: "node"
+#  node:
+#    image: "node:8"
+#    container_name: site.epesados.dev
+#    user: "node"
+#    working_dir: /home/node/app
+#    networks:
+#      - epesados
+#    environment:
+#      - NODE_ENV=development
+#    volumes:
+#      - ./:/home/node/app
+#    ports:
+#      - "7777:8080"
+#    command: "yarn serve"
+  site-static.epesados.dev:
+    container_name: site-static.epesados.dev
     working_dir: /home/node/app
+    build:
+      context: .
+      dockerfile: Dockerfile
     networks:
       - epesados
-    environment:
-      - NODE_ENV=development
     volumes:
-      - ./:/home/node/app
+      - ./static/:/usr/share/nginx/html
     ports:
-      - "7777:8080"
-    command: "yarn serve"
+      - "7777:80"
 networks:
   epesados:
     external: true
