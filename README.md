@@ -1,23 +1,31 @@
 # site
 
-## Project setup
+## Docker setup
+Ubuntu
+
 ```
-yarn install
+apt install docker
+```
+OSx
+
+```
+brew install docker
 ```
 
-### Compiles and hot-reloads for development
+
+### Compiles to dev
 ```
-yarn serve
+ docker-compose -f docker-compose-dev.yml up -d 
 ```
 
-### Compiles and minifies for production
+### Compile to prod
 ```
-yarn build
+ docker-compose up -d 
 ```
 
 ### Lints and fixes files
 ```
-yarn lint
+docker exec -it site-static.epesados.dev yarn lint
 ```
 
 ### Customize configuration
