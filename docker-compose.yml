@@ -11,6 +11,8 @@ services:
       - epesados
     ports:
       - "80:80"
+    volumes:
+      - ./static/:/usr/share/nginx/html
 networks:
   epesados:
     external: true
