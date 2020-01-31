@@ -9,5 +9,6 @@
 # production stage
 FROM nginx:stable-alpine as production-stage
 COPY static /usr/share/nginx/html
+COPY docker/nginx/conf.d /etc/nginx/conf.d
 EXPOSE '80'
 CMD ["nginx", "-g", "daemon off;"]

@@ -16,7 +16,7 @@ services:
 #    command: "yarn serve"
   site-static.epesados.dev:
     container_name: site-static.epesados.dev
-    working_dir: /home/node/app
+    working_dir: /usr/share/nginx/html
     build:
       context: .
       dockerfile: Dockerfile
