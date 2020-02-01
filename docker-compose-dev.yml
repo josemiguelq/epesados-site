@@ -23,7 +23,7 @@ services:
     networks:
       - epesados
     volumes:
-      - ./static/:/usr/share/nginx/html
+      - ./html/:/usr/share/nginx/html
     ports:
       - "7777:80"
 networks:
