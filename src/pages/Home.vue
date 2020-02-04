@@ -314,17 +314,6 @@
                     <div class="thumb">
                         <img class="f-img img-fluid mx-auto" src="img/b1.jpg" alt="">
                     </div>
-                    <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-                        <div>
-                            <img class="img-fluid" src="img/user.png" alt="">
-                            <a href="#"><span>Carolina Petarnela</span></a>
-                        </div>
-                        <div class="meta">
-                            13th Dec
-                            <span class="lnr lnr-heart"></span> 15
-                            <span class="lnr lnr-bubble"></span> 04
-                        </div>
-                    </div>
                     <a href="#">
                         <h4>Cuidados básico com a Linha Hunday</h4>
                     </a>
@@ -339,10 +328,6 @@
                         <img class="f-img img-fluid mx-auto" src="img/b2.jpg" alt="">
                     </div>
                     <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-                        <div>
-                            <img class="img-fluid" src="img/user.png" alt="">
-                            <a href="#"><span>Carolina Petarnela</span></a>
-                        </div>
                         <div class="meta">
                             13th Dec
                             <span class="lnr lnr-heart"></span> 15
@@ -363,10 +348,6 @@
                         <img class="f-img img-fluid mx-auto" src="img/b3.jpg" alt="">
                     </div>
                     <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-                        <div>
-                            <img class="img-fluid" src="img/user.png" alt="">
-                            <a href="#"><span>Carolina Petarnela</span></a>
-                        </div>
                         <div class="meta">
                             13th Dec
                             <span class="lnr lnr-heart"></span> 15
