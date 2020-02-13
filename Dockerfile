@@ -7,8 +7,14 @@
 #RUN npm run build
 
 # production stage
+#FROM nginx:stable-alpine as production-stage
+#COPY html /usr/share/nginx/html
+#COPY docker/nginx/conf.d /etc/nginx/conf.d
+#EXPOSE '80'
+#CMD ["nginx", "-g", "daemon off;"]
+
+# production stage
 FROM nginx:stable-alpine as production-stage
-COPY html /usr/share/nginx/html
-COPY docker/nginx/conf.d /etc/nginx/conf.d
+COPY --from=build-stage /app/dist /usr/share/nginx/html
 EXPOSE '80'
 CMD ["nginx", "-g", "daemon off;"]
