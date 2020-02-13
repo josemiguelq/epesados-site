@@ -11,6 +11,8 @@ services:
       - epesados
     ports:
       - "80:80"
+    volumes:
+      - ./etc/letsencrypt/:/etc/letsencrypt/
 networks:
   epesados:
     external: true
