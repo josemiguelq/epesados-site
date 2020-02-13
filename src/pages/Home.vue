@@ -1,33 +1,6 @@
 <template>
     <div>
-    <Header/>
-    <section class="banner-area relative" id="home">
-        <div class="overlay overlay-bg"></div>
-        <div class="container">
-            <div class="row fullscreen d-flex align-items-center justify-content-center" style="padding-top: 25%;
-            padding-bottom: 25%">
-                <div class="banner-content col-lg-12 col-md-12">
-                    <h6 class="text-uppercase">Deixe o trabalho pesado com a gente!</h6>
-                    <h1>
-                        Cuide do seu negócio.
-                        Nós cuidamos das suas máquinas!
-                    </h1>
-                    <p class="text-white">
-                        A promoção dos seus serviços para máquinas pesadas na Internet, a gestão das suas manutencoes
-                        e a comunicação com os clientes já podem ser feitas a partir de uma única ferramenta, completa para profissionais.
-                    </p>
-                    <a href="#" class="primary-btn header-btn text-uppercase" style="margin: 2px">
-                        Quero ser um especialista
-                    </a>
-                    <a href="#" class="primary-btn header-btn text-uppercase" style="margin: 2px">
-                        Quero contratar um especialista
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End banner Area -->
-    <!-- Start cat Area -->
+    <Banner />
     <section class="cat-area section-gap" id="feature">
         <div class="container">
             <div class="row">
@@ -85,55 +58,53 @@
     <!-- End home-about Area -->
 
     <!-- Start service Area -->
-    <section class="service-area section-gap" id="service">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-12 pb-30 header-text text-center">
-                    <h1 class="mb-10">Setores de atuacao</h1>
-                    <p>
-                    </p>
+        <section class="service-area section-gap" id="service">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 pb-30 header-text text-center">
+                        <h1 class="mb-10">Setores de atuação</h1>
+                        <p>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="single-service">
+                            <div class="thumb">
+                                <img src="./../../public/img/index/maq-agricolas.png" alt="máquinas pesadas agricolas">
+                            </div>
+                            <h4>Máquinas Agrícolas</h4>
+                            <p>
+                                Aumente a vida útil de equipamentos sujeito a intempéries do campo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-service">
+                            <div class="thumb">
+                                <img src="./../../public/img/index/maq-construcao.jpg"
+                                     alt="máquinas pesadas construcao">
+                            </div>
+                            <h4>Maquinas de construção</h4>
+                            <p>
+                                Caminhões, escavadeiras e as máquinas usadas na área de contrução será atendida.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-service">
+                            <div class="thumb">
+                                <img src="./../../public/img/index/maq-industriais.jpg" alt="">
+                            </div>
+                            <h4>Máquinas Industriais</h4>
+                            <p>
+                                Desde o setor alimentício até de montadoras você pode achar aqui.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="single-service">
-                        <div class="thumb">
-                            <img src="img/s1.jpg" alt="">
-                        </div>
-                        <h4>Máquinas Agrícolas</h4>
-                        <p>
-                            inappropriate behavior is often laughed off as “boys will be boys,” women face higher
-                            conduct women face higher conduct.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-service">
-                        <div class="thumb">
-                            <img src="img/s2.jpg" alt="">
-                        </div>
-                        <h4>Maquinas de contrução</h4>
-                        <p>
-                            inappropriate behavior is often laughed off as “boys will be boys,” women face higher
-                            conduct women face higher conduct.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-service">
-                        <div class="thumb">
-                            <img src="img/s3.jpg" alt="">
-                        </div>
-                        <h4>Máquinas Industriais</h4>
-                        <p>
-                            inappropriate behavior is often laughed off as “boys will be boys,” women face higher
-                            conduct women face higher conduct.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
     <!-- End service Area -->
 
 
@@ -178,125 +149,6 @@
             </div>
         </div>
     </section>
-    <!-- End faq Area -->
-
-
-    <!-- Start project Area -->
-<!--    <section class="project-area section-gap" id="project">-->
-<!--        <div class="container">-->
-<!--            <div class="row justify-content-center">-->
-<!--                <div class="col-md-8 pb-30 header-text text-center">-->
-<!--                    <h1 class="mb-10">Latest Finished Projects</h1>-->
-<!--                    <p>-->
-<!--                        Who are in extremely love with eco friendly system..-->
-<!--                    </p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="row">-->
-<!--                <div class="col-lg-8 col-md-8">-->
-<!--                    <a href="img/p1.jpg" class="img-gal">-->
-<!--                        <img class="img-fluid single-project" src="img/p1.jpg" alt="">-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--                <div class="col-lg-4 col-md-4">-->
-<!--                    <a href="img/p2.jpg" class="img-gal">-->
-<!--                        <img class="img-fluid single-project" src="img/p2.jpg" alt="">-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--                <div class="col-lg-6 col-md-6">-->
-<!--                    <a href="img/p3.jpg" class="img-gal">-->
-<!--                        <img class="img-fluid single-project" src="img/p3.jpg" alt="">-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--                <div class="col-lg-6 col-md-6">-->
-<!--                    <a href="img/p4.jpg" class="img-gal">-->
-<!--                        <img class="img-fluid single-project" src="img/p4.jpg" alt="">-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-    <!-- End project Area -->
-
-    <!-- Start feedback Area -->
-<!--    <section class="feedback-area section-gap relative" id="feedback">-->
-<!--        <div class="overlay overlay-bg"></div>-->
-<!--        <div class="container">-->
-<!--            <div class="row justify-content-center">-->
-<!--                <div class="col-md-12 pb-30 header-text text-center">-->
-<!--                    <h1 class="mb-10 text-white">Enjoy our Client’s Feedback</h1>-->
-<!--                    <p class="text-white">-->
-<!--                        Who are in extremely love with eco friendly system..-->
-<!--                    </p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="row feedback-contents justify-content-center align-items-center">-->
-<!--                <div class="col-lg-6 feedback-left relative d-flex justify-content-center align-items-center">-->
-<!--                    <div class="overlay overlay-bg"></div>-->
-<!--                    <a class="play-btn" href="https://www.youtube.com/watch?v=ARA0AxrnHdM"><img class="img-fluid"-->
-<!--                                                                                                src="img/play-btn.png"-->
-<!--                                                                                                alt=""></a>-->
-<!--                </div>-->
-<!--                <div class="col-lg-6 feedback-right">-->
-<!--                    <div class="active-review-carusel">-->
-<!--                        <div class="single-feedback-carusel">-->
-<!--                            <div class="title d-flex flex-row">-->
-<!--                                <h4 class="text-white pb-10">Fannie Rowe</h4>-->
-<!--                                <div class="star">-->
-<!--                                    <span class="fa fa-star checked"></span>-->
-<!--                                    <span class="fa fa-star checked"></span>-->
-<!--                                    <span class="fa fa-star checked"></span>-->
-<!--                                    <span class="fa fa-star"></span>-->
-<!--                                    <span class="fa fa-star"></span>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <p class="text-white">-->
-<!--                                Accessories Here you can find the best computer accessory for your laptop, monitor,-->
-<!--                                printer, scanner, speaker. Here you can find the best computer accessory for your-->
-<!--                                laptop, monitor, printer, scanner, speaker.-->
-<!--                            </p>-->
-<!--                        </div>-->
-<!--                        <div class="single-feedback-carusel">-->
-<!--                            <div class="title d-flex flex-row">-->
-<!--                                <h4 class="text-white pb-10">Fannie Rowe</h4>-->
-<!--                                <div class="star">-->
-<!--                                    <span class="fa fa-star checked"></span>-->
-<!--                                    <span class="fa fa-star checked"></span>-->
-<!--                                    <span class="fa fa-star checked"></span>-->
-<!--                                    <span class="fa fa-star checked"></span>-->
-<!--                                    <span class="fa fa-star"></span>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <p class="text-white">-->
-<!--                                Accessories Here you can find the best computer accessory for your laptop, monitor,-->
-<!--                                printer, scanner, speaker. Here you can find the best computer accessory for your-->
-<!--                                laptop, monitor, printer, scanner, speaker.-->
-<!--                            </p>-->
-<!--                        </div>-->
-<!--                        <div class="single-feedback-carusel">-->
-<!--                            <div class="title d-flex flex-row">-->
-<!--                                <h4 class="text-white pb-10">Fannie Rowe</h4>-->
-<!--                                <div class="star">-->
-<!--                                    <span class="fa fa-star checked"></span>-->
-<!--                                    <span class="fa fa-star checked"></span>-->
-<!--                                    <span class="fa fa-star checked"></span>-->
-<!--                                    <span class="fa fa-star checked"></span>-->
-<!--                                    <span class="fa fa-star checked	"></span>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <p class="text-white">-->
-<!--                                Accessories Here you can find the best computer accessory for your laptop, monitor,-->
-<!--                                printer, scanner, speaker. Here you can find the best computer accessory for your-->
-<!--                                laptop, monitor, printer, scanner, speaker.-->
-<!--                            </p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-    <!-- End feedback Area -->
-
 
     <!-- Start blog Area -->
     <section class="blog-area section-gap" id="blog">
@@ -373,13 +225,13 @@
 </template>
 
 <script>
-    import Header from "../components/Header";
     import Footer from "../components/Footer";
     import Partner from "../components/forms/Partner";
     import MainActivities from "../components/MainActivities";
+    import Banner from "../components/Banner";
 
     export default {
         name: "Home",
-        components: {MainActivities, Partner, Footer, Header}
+        components: {Banner, MainActivities, Partner, Footer }
     }
 </script>

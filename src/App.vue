@@ -1,13 +1,18 @@
 <template>
-    <Home />
+    <div>
+        <Header />
+        <Home />
+    </div>
 </template>
 
 <script>
 import Home from './pages/Home'
+import Header from "./components/Header";
 
 export default {
   name: 'app',
   components: {
+    Header,
     Home
   }
 }
