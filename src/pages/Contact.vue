@@ -17,7 +17,7 @@
                             <span class="lnr lnr-phone-handset"></span>
                         </div>
                         <div class="contact-details">
-                            <h5>(11) 98873-0881</h5>
+                            <a href="tel:+5511988730881"><h5>(11) 98873-0881</h5></a>
                             <p>Seg to Dom 9am a 6 pm</p>
                         </div>
                     </div>
@@ -26,7 +26,7 @@
                             <span class="lnr lnr-envelope"></span>
                         </div>
                         <div class="contact-details">
-                            <h5>contato@epesados.com</h5>
+                            <a href="mailto:contato@epesados.com"><h5>contato@epesados.com</h5></a>
                             <p>Entre em contato!</p>
                         </div>
                     </div>
