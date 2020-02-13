@@ -22,7 +22,7 @@
                                        required="" type="email">
                                 <button class="click-btn btn btn-default" v-on:click="sendLead"><i
                                         class="fa fa-long-arrow-right"
-                                                                             aria-hidden="true"></i></button>
+                                        aria-hidden="true"></i></button>
                                 <div style="position: absolute; left: -5000px;">
                                     <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value=""
                                            type="text">
@@ -51,9 +51,15 @@
 
     export default {
         name: "Footer",
-        methods:  {
+        data: () => {
+            return {
+                email: ''
+            }
+        },
+        methods: {
             sendLead: function () {
-                axios.post('http://localhost:7779/api/v1/public/partner/signup', this.partner, {headers : {}})
+                const email = this.email
+                axios.post('http://epesados.com:7779//api/v1/public/lead', {email}, {headers: {}})
                     .then((res) => {
                         window.console.log(res)
                     })
