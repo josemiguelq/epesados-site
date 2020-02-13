@@ -5,11 +5,10 @@
                 <div class="col-lg-5 col-md-6 col-sm-6">
                     <div class="single-footer-widget">
                         <h6>Sobre</h6>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                            ut labore dolore magna aliqua.
-                        </p>
-
+                        <div style="color: white">
+                            <h5 style="color: white">(11) 98873-0881</h5>
+                            <p>Seg to Dom 9am a 6 pm</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-5  col-md-6 col-sm-6">
@@ -17,13 +16,12 @@
                         <h6>Newsletter</h6>
                         <p>Fique atualizado com nosso material</p>
                         <div class="" id="mc_embed_signup">
-                            <form target="_blank" novalidate="true"
-                                  action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                                  method="get" class="form-inline">
+                            <div target="_blank" class="form-inline">
                                 <input class="form-control" name="EMAIL" placeholder="Enter Email"
-                                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"
+                                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Digite seu Email '"
                                        required="" type="email">
-                                <button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right"
+                                <button class="click-btn btn btn-default" v-on:click="sendLead"><i
+                                        class="fa fa-long-arrow-right"
                                                                              aria-hidden="true"></i></button>
                                 <div style="position: absolute; left: -5000px;">
                                     <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value=""
@@ -31,7 +29,7 @@
                                 </div>
 
                                 <div class="info"></div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -40,9 +38,6 @@
                         <h6>Siga-nos</h6>
                         <div class="footer-social d-flex align-items-center">
                             <a href="#"><i class="fa fa-facebook"></i></a>
-<!--                            <a href="#"><i class="fa fa-twitter"></i></a>-->
-<!--                            <a href="#"><i class="fa fa-dribbble"></i></a>-->
-<!--                            <a href="#"><i class="fa fa-behance"></i></a>-->
                         </div>
                     </div>
                 </div>
@@ -52,8 +47,19 @@
 </template>
 
 <script>
+    import axios from 'axios'
+
     export default {
-        name: "Footer"
+        name: "Footer",
+        methods:  {
+            sendLead: function () {
+                axios.post('http://localhost:7779/api/v1/public/partner/signup', this.partner, {headers : {}})
+                    .then((res) => {
+                        window.console.log(res)
+                    })
+                    .catch(e => window.console.log(e))
+            }
+        }
     }
 </script>
 

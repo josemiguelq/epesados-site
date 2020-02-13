@@ -10,8 +10,7 @@
                         </h1>
                         <p class="text-white link-nav"><a href="./../../index.html">Home </a> <span
                                 class="lnr lnr-arrow-right"></span>
-                            <a
-                                    href="epesados.html"> Sobre</a></p>
+                            <a><router-link to="/"> Sobre</router-link></a></p>
                     </div>
                 </div>
             </div>
@@ -29,7 +28,7 @@
                         </i>
                     </div>
 
-                    <div class="pb-30 row">
+                    <div class="pb-30 row col-md-12">
                         <div class="col-md-6 pb-60 header-text text-center">
                             <h2 style="color: #fab700">Missão</h2>
                             <p style="font-weight: 400">
@@ -60,17 +59,6 @@
                                 <h3 class="mb-20">{{valor.valor}} </h3>
                                 <p>{{valor.text}}</p>
                             </div>
-                            <div class="col-md-4 mb-10">
-                                <h3 class="mb-20">Empatia</h3>
-                                <p>Buscamos pessoas que se afastem de suas ideias e convicções para entender
-                                    verdadeiramente o mundo com os olhos do outro.</p>
-                            </div>
-                            <div class="col-md-4 mb-10">
-                                <h3>Inovação e criatividade</h3>
-                                <p>Fomentar a inovação e a criatividade a fim de surpreender na forma de
-                                    atender..</p>
-                            </div>
-
                             <div class="col-md-6 mb-10">
                                 <h3 class="mb-20">Ética</h3>
                                 <p>Acreditamos que em tudo que fazemos não há negociação sem ter ética na relação.</p>
@@ -98,6 +86,16 @@
                     valor: "Paixão pelo Negócio",
                     text:
                         "Buscamos pessoas que verdadeiramente sejam apaixonadas pelo nosso negócio e  que contribuam genuinamente com nosso crescimento."
+                },
+                {
+                    valor: "Empatia",
+                    text:
+                        "Buscamos pessoas que se afastem de suas ideias e convicções para entender  verdadeiramente o mundo com os olhos do outro."
+                },
+                {
+                    valor: "Inovação e criatividade",
+                    text:
+                        "Fomentar a inovação e a criatividade a fim de surpreender na forma de atender."
                 }
             ]
         })
