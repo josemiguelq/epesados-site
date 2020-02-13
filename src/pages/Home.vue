@@ -20,7 +20,8 @@
                                     class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-rocket"></span></span></a>
                             <h4 class="mt-40 mb-20">Receba lembretes</h4>
                             <p>
-                                Cuidamos da vida útil das suas máquinas te enviando alertas sobre manutenções e as melhores dicas para manter seu equipamento nas melhores condições.
+                                Cuidamos da vida útil das suas máquinas te enviando alertas sobre manutenções e
+                                as melhores dicas para manter seu equipamento nas melhores condições.
                             </p>
                         </div>
                     </div>
@@ -59,12 +60,13 @@
                     <div class="col-lg-8 col-md-12 home-about-left">
                         <h6>Fique a vista para novos clientes</h6>
                         <h1>
-                            Anúncie com a gente <br>
+                            Anuncie com a gente <br>
                         </h1>
-                        <p class="sub">We are here to listen from you deliver exellence</p>
                         <p class="pb-20">
-                            Anúncie seu serviços para ... .
+                            A promoção dos seus serviços para máquinas pesadas na Internet, a gestão das suas manutencoes
+                            e a comunicação com os clientes já podem ser feitas a partir de uma única ferramenta, completa para profissionais
                         </p>
+                        <a class="primary-btn"><router-link to="/partner/signup">Mais informações</router-link></a>
                     </div>
                     <div class="col-lg-4 col-md-12 home-about-right relative">
                         <Partner/>
@@ -182,16 +184,15 @@
                 <div class="row">
                     <div class="single-blog col-lg-4 col-md-4">
                         <div class="thumb">
-                            <img class="f-img img-fluid mx-auto" src="img/b1.jpg" alt="">
+                            <img class="f-img img-fluid mx-auto" src="img/blog/operador.png" alt="">
                         </div>
-                        <a href="#">
-                            <h4>Cuidados básico com a Linha Hunday</h4>
+                        <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
+                        </div>
+                        <a href="pages/blog/operador-nao-qualificado.html">
+                            <h4>Operador não qualificado = Prejuízo para sua empresa</h4>
                         </a>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                            ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip exea.
+                            Já pensou ter um equipamento danificado ou até mesmo a perda de uma carga ou estoque devido a um tombamento, atropelamento, batidas entre máquinas?
                         </p>
                     </div>
                     <div class="single-blog col-lg-4 col-md-4">
@@ -199,44 +200,14 @@
                             <img class="f-img img-fluid mx-auto" src="img/b2.jpg" alt="">
                         </div>
                         <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-                            <div class="meta">
-                                13th Dec
-                                <span class="lnr lnr-heart"></span> 15
-                                <span class="lnr lnr-bubble"></span> 04
-                            </div>
                         </div>
-                        <a href="#">
-                            <h4>Dicas para seguros</h4>
+                        <a href="pages/blog/seguros.html">
+                            <h4>Seguro: mal necessário ou proteção indispensável?</h4>
                         </a>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                            ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip exea.
+                            Hoje apenas 30% da frota que está em atividade está segurada além disso muitos locadores não estão renovando as apólices.
                         </p>
                     </div>
-                    <div class="single-blog col-lg-4 col-md-4">
-                        <div class="thumb">
-                            <img class="f-img img-fluid mx-auto" src="img/b3.jpg" alt="">
-                        </div>
-                        <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-                            <div class="meta">
-                                13th Dec
-                                <span class="lnr lnr-heart"></span> 15
-                                <span class="lnr lnr-bubble"></span> 04
-                            </div>
-                        </div>
-                        <a href="#">
-                            <h4>Onde conseguir peças de boa qualidade</h4>
-                        </a>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                            ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip exea.
-                        </p>
-                    </div>
-
 
                 </div>
             </div>
@@ -246,11 +217,10 @@
 
 <script>
     import Partner from "../components/forms/Partner";
-    import MainActivities from "../components/MainActivities";
     import Banner from "../components/Banner";
 
     export default {
         name: "Home",
-        components: {Banner, MainActivities, Partner }
+        components: {Banner, Partner }
     }
 </script>

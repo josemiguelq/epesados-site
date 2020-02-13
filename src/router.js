@@ -5,6 +5,7 @@ import Vue from 'vue'
 import Contact from "./pages/Contact";
 import BlogHome from "./components/blog/BlogHome";
 import Post from "./components/blog/Post";
+import SignUp from "./pages/partner/SignUp";
 
 Vue.use(Router)
 
@@ -16,6 +17,7 @@ export default new Router({
         {path: '/contact', component: Contact},
         {path: '/blog', component: BlogHome},
         {path: '/post', component: Post},
+        {path: '/partner/signup', component: SignUp},
     ]
 })
 
