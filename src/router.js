@@ -4,7 +4,6 @@ import Router from "vue-router";
 import Vue from 'vue'
 import Contact from "./pages/Contact";
 import BlogHome from "./components/blog/BlogHome";
-import Post from "./components/blog/Post";
 
 Vue.use(Router)
 

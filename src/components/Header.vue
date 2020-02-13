@@ -21,12 +21,12 @@
                 </div>
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
-                        <li class="menu-active"><a href="index.html">Home</a></li>
+                        <li class="menu-active"><a><router-link to="/">Home</router-link></a></li>
                         <li><a><router-link to="/about">Sobre</router-link></a></li>
                         <li><a><router-link to="/services">Serviços</router-link></a></li>
                         <li><a><router-link to="/seguros">Seguros</router-link></a></li>
                         <li><a><router-link to="/contact">Contato</router-link></a></li>
-                        <li><a><router-link to="/contact">Blog</router-link></a></li>
+                        <li><a><router-link to="/blog">Blog</router-link></a></li>
                     </ul>
                 </nav>
             </div>
