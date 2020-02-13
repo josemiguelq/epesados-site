@@ -17,7 +17,7 @@ export default new Router({
         {path: '/contact', component: Contact},
         {path: '/blog', component: BlogHome},
         {path: '/post', component: Post},
-        {path: '/partner/signup', component: SignUp},
+        {path: '/partner/signup', component: SignUp}
     ]
 })
 

@@ -66,7 +66,7 @@
                             A promoção dos seus serviços para máquinas pesadas na Internet, a gestão das suas manutencoes
                             e a comunicação com os clientes já podem ser feitas a partir de uma única ferramenta, completa para profissionais
                         </p>
-                        <a class="primary-btn"><router-link to="/partner/signup">Mais informações</router-link></a>
+                        <router-link class="primary-btn" to="/partner/signup">Mais informações</router-link>
                     </div>
                     <div class="col-lg-4 col-md-12 home-about-right relative">
                         <Partner/>
