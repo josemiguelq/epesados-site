@@ -4,27 +4,45 @@
         <section class="cat-area section-gap" id="feature">
             <div class="container">
                 <div class="row">
-                    <MainActivities title="Encontre especialistas" content="Nós cuidamos do ... manutencao preventiva"
-                                    class-icon="lnr lnr-magic-wand"/>
+                    <div class="col-lg-3">
+                        <div class="single-cat">
+                            <a href="#" class="hb-sm-margin mx-auto d-block"><span
+                                    class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-rocket"></span></span></a>
+                            <h4 class="mt-40 mb-20">Encontre especialistas</h4>
+                            <p>
+                                Contrate aqui os operadores bem colocados e qualificados para conduzir seus equipamentos.
+                            </p>
+                        </div>
+                    </div>
                     <div class="col-lg-3">
                         <div class="single-cat">
                             <a href="#" class="hb-sm-margin mx-auto d-block"><span
                                     class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-rocket"></span></span></a>
                             <h4 class="mt-40 mb-20">Receba lembretes</h4>
                             <p>
-                                Buscamos os operadores mais bem colocados....
+                                Cuidamos da vida útil das suas máquinas te enviando alertas sobre manutenções e as melhores dicas para manter seu equipamento nas melhores condições.
                             </p>
                         </div>
                     </div>
-                    <MainActivities title="Avalie o serviço" content="Nós cuidamos do ... manutencao preventiva"
-                                    class-icon="lnr lnr-magic-wand"/>
+                    <div class="col-lg-3">
+                        <div class="single-cat">
+                            <a href="#" class="hb-sm-margin mx-auto d-block"><span
+                                    class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-bug"></span></span></a>
+                            <h4 class="mt-40 mb-20">Avalie o serviço</h4>
+                            <p>
+                                Avalie o serviço prestado e garanta a qualidade dos próximos serviços solicitando o
+                                especialista mais próximo e melhor avaliado.
+                            </p>
+                        </div>
+                    </div>
                     <div class="col-lg-3">
                         <div class="single-cat">
                             <a href="#" class="hb-sm-margin mx-auto d-block"><span
                                     class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-bug"></span></span></a>
                             <h4 class="mt-40 mb-20">Seguros</h4>
                             <p>
-                                Contrate seguros para ...
+                                Porque pra nós a segurança do seu bem vale muito para ser deixado pra depois. Consulte agora
+                                mesmo um de nossos especialista.
                             </p>
                         </div>
                     </div>
@@ -47,7 +65,6 @@
                         <p class="pb-20">
                             Anúncie seu serviços para ... .
                         </p>
-                        <!--                    <a class="primary-btn" href="#">Quero me cadastrar</a>-->
                     </div>
                     <div class="col-lg-4 col-md-12 home-about-right relative">
                         <Partner/>
