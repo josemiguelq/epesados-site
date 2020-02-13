@@ -228,13 +228,12 @@
 </template>
 
 <script>
-    import Footer from "../components/Footer";
     import Partner from "../components/forms/Partner";
     import MainActivities from "../components/MainActivities";
     import Banner from "../components/Banner";
 
     export default {
         name: "Home",
-        components: {Banner, MainActivities, Partner, Footer}
+        components: {Banner, MainActivities, Partner }
     }
 </script>
