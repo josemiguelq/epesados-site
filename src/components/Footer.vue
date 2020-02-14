@@ -17,9 +17,11 @@
                         <p>Fique atualizado com nosso material</p>
                         <div class="" id="mc_embed_signup">
                             <div target="_blank" class="form-inline">
-                                <input class="form-control" name="EMAIL" placeholder="Enter Email"
+                                <input class="form-control"  placeholder="Enter Email"
                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Digite seu Email '"
-                                       required="" type="email">
+                                       required="" type="email"
+                                       v-model="email"
+                                >
                                 <button class="click-btn btn btn-default" v-on:click="sendLead"><i
                                         class="fa fa-long-arrow-right"
                                         aria-hidden="true"></i></button>
