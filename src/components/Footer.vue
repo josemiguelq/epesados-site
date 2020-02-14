@@ -59,7 +59,7 @@
         methods: {
             sendLead: function () {
                 const email = this.email
-                axios.post('http://epesados.com:7779//api/v1/public/lead', {email}, {headers: {}})
+                axios.post('http://epesados.com:7779/api/v1/public/lead', {email}, {headers: {}})
                     .then((res) => {
                         window.console.log(res)
                     })
