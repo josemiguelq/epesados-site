@@ -19,7 +19,7 @@ export default new Router({
         {path: '/blog', component: BlogHome},
         {path: '/post', component: Post},
         {path: '/partner/signup', component: SignUp},
-        {path: '/services/seguro', component: Seguros},
+        {path: '/services/seguros', component: Seguros},
     ]
 })
 
