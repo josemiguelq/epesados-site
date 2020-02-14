@@ -23,8 +23,7 @@
                         <h2 class="mb-20" style="color: #fab700">Propósito</h2>
                         <i style="font-size: 20px">
                             Transformar a experiencia do cliente se relacionando de maneira genuína e humana, criando
-                            relações
-                            profundas e sólidas para o futuro
+                            relações profundas e sólidas para o futuro.
                         </i>
                     </div>
 
