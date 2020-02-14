@@ -40,7 +40,7 @@
         },
         methods: {
             create: function () {
-                axios.post('http://epesados.com:7779//api/v1/public/partner/signup', this.partner, {headers : {}})
+                axios.post('https://epesados-backend.herokuapp.com/api/v1/public/partner/signup', this.partner, {headers : {}})
                     .then((res) => {
                         window.console.log(res)
                     })
