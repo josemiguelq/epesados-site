@@ -1,51 +1,19 @@
 version: "2"
 services:
-  site-static.epesados.dev:
-    container_name: site-static.epesados.prod
-    working_dir: /usr/share/nginx/html
-    image: nginx:stable-alpine
-    environment:
-      - VIRTUAL_PROTO=HTTPS
-      - VIRTUAL_HOST=epesados.com
-      - VIRTUAL_PORT=7777
-    networks:
-      - epesados
-    volumes:
-      - ./html/:/usr/share/nginx/html
-    ports:
-      - "7777:80"
   node:
-    container_name: app.epesados.prod
+    container_name: site.epesados.prod
     build:
       context: ./
       dockerfile: Dockerfile
     environment:
       - NODE_ENV=production
-      - VIRTUAL_PROTO=
-      - VIRTUAL_HOST=app.epesados.com
-      - VIRTUAL_PORT=7778
     networks:
       - epesados
-    ports:
-      - "7778:80"
-  nginx-proxy:
-    image: jwilder/nginx-proxy
     ports:
       - "80:80"
       - "443:443"
     volumes:
-      - /var/run/docker.sock:/tmp/docker.sock:ro
-      - /etc/nginx/certs
-      - /etc/nginx/vhost.d
-      - /usr/share/nginx/html
-  lets:
-    image: jrcs/letsencrypt-nginx-proxy-companion
-    volumes_from:
-      - nginx-proxy
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock:ro
-    environment:
-        - DEFAULT_EMAIL=mail@yourdomain.tld
+      - ./../../../etc/letsencrypt/:/etc/letsencrypt/
 networks:
   epesados:
     external: true
