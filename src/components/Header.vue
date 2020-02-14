@@ -24,7 +24,7 @@
                         <li class="menu-active"><a><router-link to="/">Home</router-link></a></li>
                         <li><a><router-link to="/about">Sobre</router-link></a></li>
                         <li><a><router-link to="/services/seguros">Serviços</router-link></a></li>
-                        <li><a><router-link to="/seguros">Seguros</router-link></a></li>
+                        <li><a><router-link to="/services/seguros">Seguros</router-link></a></li>
                         <li><a><router-link to="/contact">Contato</router-link></a></li>
                         <li><a><router-link to="/blog">Blog</router-link></a></li>
                     </ul>
