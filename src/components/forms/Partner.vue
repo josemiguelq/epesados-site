@@ -9,16 +9,6 @@
         <input v-model="partner.name" type="text" class="form-control" placeholder="*Nome">
         <input v-model="partner.phone" type="phone" class="form-control" placeholder="*Contato">
         <input v-model="partner.email" type="email" class="form-control" placeholder="*Email">
-        <input v-model="partner.zip_code" type="email" class="form-control" placeholder="*CEP">
-        <input v-model="partner.range" min="0" type="text"
-               class="form-control"
-               placeholder="Raio de atendimento (km) ou lista de cidades que posso atender">
-
-        <textarea name="message" cols="30" rows="5" placeholder="*Serviços que eu faço"
-                  class="form-control"></textarea>
-
-        <textarea name="message" cols="30" rows="5" placeholder="*Minhas especializações"
-                  class="form-control"></textarea>
         <button class="primary-btn" v-on:click="create">Enviar</button>
         <p v-if="errors.length">
             <b>Por favor, corrija o(s) seguinte(s) erro(s):</b>
@@ -49,7 +39,7 @@
         methods: {
             create: function () {
                 this.checkForm()
-                axios.post('https://epesados-backend.herokuapp.com/api/v1/public/partner/signup', this.partner, {headers: {}})
+                axios.post('https://epesados-backend.herokuapp.com/api/v1/public/partner', this.partner, {headers: {}})
                     .then((res) => {
                         window.console.log(res)
                     })

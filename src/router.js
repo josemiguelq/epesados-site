@@ -7,6 +7,8 @@ import BlogHome from "./components/blog/BlogHome";
 import Post from "./components/blog/Post";
 import SignUp from "./pages/partner/SignUp";
 import Seguros from "./pages/services/Seguros";
+import Login from "./pages/Login";
+import Checkout from "./components/Checkout";
 
 Vue.use(Router)
 
@@ -19,6 +21,8 @@ export default new Router({
         {path: '/blog', component: BlogHome},
         {path: '/post', component: Post},
         {path: '/partner/signup', component: SignUp},
+        {path: '/login', component: Login},
+        {path: '/checkout', component: Checkout},
         {path: '/services/seguros', component: Seguros},
     ]
 })

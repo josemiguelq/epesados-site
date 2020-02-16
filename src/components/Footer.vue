@@ -14,7 +14,8 @@
                 <div class="col-lg-5  col-md-6 col-sm-6">
                     <div class="single-footer-widget">
                         <h6>Newsletter</h6>
-                        <p>Fique atualizado com nosso material</p>
+                        <p v-if="successLead">Seu cadastro foi enviado</p>
+                        <p v-else>Fique atualizado com nosso material</p>
                         <div class="" id="mc_embed_signup">
                             <div target="_blank" class="form-inline">
                                 <input class="form-control"  placeholder="Enter Email"
@@ -22,9 +23,14 @@
                                        required="" type="email"
                                        v-model="email"
                                 >
-                                <button class="click-btn btn btn-default" v-on:click="sendLead"><i
-                                        class="fa fa-long-arrow-right"
-                                        aria-hidden="true"></i></button>
+                                <button
+                                        class="click-btn btn btn-default"
+                                        :disabled="disabled"
+                                        v-on:click="sendLead"
+                                >
+                                    <i class="fa fa-long-arrow-right"
+                                        aria-hidden="true"></i>
+                                </button>
                                 <div style="position: absolute; left: -5000px;">
                                     <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value=""
                                            type="text">
@@ -55,17 +61,23 @@
         name: "Footer",
         data: () => {
             return {
-                email: ''
+                email: '',
+                disabled: false,
+                successLead: false,
             }
         },
         methods: {
             sendLead: function () {
                 const email = this.email
+                this.disabled = true;
                 axios.post('https://epesados-backend.herokuapp.com/api/v1/public/lead', {email}, {headers: {}})
                     .then((res) => {
+                        this.disabled = false;
+                        this.successLead = true
                         window.console.log(res)
                     })
                     .catch(e => window.console.log(e))
+                    .finally(() => this.disabled = false)
             }
         }
     }
