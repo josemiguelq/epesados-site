@@ -23,9 +23,7 @@
                 credentials: {
                     name: null,
                     phone: null,
-                    email: null,
-                    zip_code: null,
-                    range: null,
+                    email: null
                 }
             }
         },
@@ -58,6 +56,3 @@
     }
 </script>
 
-<style scoped>
-
-</style>

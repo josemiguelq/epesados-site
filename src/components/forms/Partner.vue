@@ -1,21 +1,28 @@
 <template>
-    <div class="form-wrap">
-        <div class="form-select" id="service-select">
-            <select>
-                <option value="1">Sou operador de máquinas</option>
-                <option value="2">Sou mecanico</option>
-            </select>
+    <div v-bind:class="{ 'home-about-right': !resgisteredC }" class="col-lg-4 col-md-12 relative">
+        <div v-if="resgisteredC">
+            <h2>Parabéns! </h2>
+            <p>Você esta muito perto de ser um de nossos especialista!</p>
+            <p>Verifique seu email para concluir seu cadastro</p>
         </div>
-        <input v-model="partner.name" type="text" class="form-control" placeholder="*Nome">
-        <input v-model="partner.phone" type="phone" class="form-control" placeholder="*Contato">
-        <input v-model="partner.email" type="email" class="form-control" placeholder="*Email">
-        <button class="primary-btn" v-on:click="create">Enviar</button>
-        <p v-if="errors.length">
-            <b>Por favor, corrija o(s) seguinte(s) erro(s):</b>
+        <div v-else class="form-wrap">
+            <div class="form-select" id="service-select">
+                <select>
+                    <option value="1">Sou operador de máquinas</option>
+                    <option value="2">Sou mecanico</option>
+                </select>
+            </div>
+            <input v-model="partner.name" type="text" class="form-control" placeholder="*Nome">
+            <input v-model="partner.phone" type="phone" class="form-control" placeholder="*Contato">
+            <input v-model="partner.email" type="email" class="form-control" placeholder="*Email">
+            <button class="primary-btn" v-on:click="create">Enviar</button>
+            <p v-if="errors.length">
+                <b>Por favor, corrija o(s) seguinte(s) erro(s):</b>
             <ul>
                 <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
             </ul>
-        </p>
+            </p>
+        </div>
     </div>
 </template>
 
@@ -27,12 +34,11 @@
         data: () => {
             return {
                 errors: [],
+                registeredPartner: false,
                 partner: {
                     name: null,
                     phone: null,
                     email: null,
-                    zip_code: null,
-                    range: null,
                 }
             }
         },
@@ -41,24 +47,22 @@
                 this.checkForm()
                 axios.post('https://epesados-backend.herokuapp.com/api/v1/public/partner', this.partner, {headers: {}})
                     .then((res) => {
+                        this.registeredPartner = true
                         window.console.log(res)
                     })
                     .catch(e => window.console.log(e))
             },
             checkForm: function () {
-                if (this.name && this.age) {
+                if (this.name && this.email) {
                     return true;
                 }
 
                 this.errors = [];
-
-                if (!this.name) {
-                    this.errors.push('O nome é obrigatório.');
-                }
-                if (!this.phone) {
-                    this.errors.push('A idade é obrigatória.');
-                }
-
+            }
+        },
+        computed: {
+            resgisteredC: function () {
+                return this.registeredPartner
             }
         }
     }

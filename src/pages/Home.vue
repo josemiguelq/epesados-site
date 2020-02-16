@@ -68,9 +68,7 @@
                         </p>
                         <router-link class="primary-btn" to="/partner/signup">Mais informações</router-link>
                     </div>
-                    <div class="col-lg-4 col-md-12 home-about-right relative">
                         <Partner/>
-                    </div>
                 </div>
             </div>
         </section>
