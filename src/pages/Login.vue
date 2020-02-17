@@ -22,8 +22,7 @@
                 errors: [],
                 credentials: {
                     name: null,
-                    phone: null,
-                    email: null
+                    password: null,
                 }
             }
         },
@@ -32,7 +31,7 @@
                 this.checkForm()
                 axios.post('https://epesados-backend.herokuapp.com/api/v1/users/login', this.credentials, {headers: {}})
                     .then((res) => {
-                        localStorage.setItem('user', JSON.stringify(res.data.user));
+                        localStorage.set('token', JSON.stringify(res.data.token));
                         window.console.log(res)
                     })
                     .catch(e => window.console.log(e))
