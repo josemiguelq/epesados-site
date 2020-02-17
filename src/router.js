@@ -9,6 +9,7 @@ import SignUp from "./pages/partner/SignUp";
 import Seguros from "./pages/services/Seguros";
 import Login from "./pages/Login";
 import Checkout from "./components/Checkout";
+import FormPartnerSignup from "./pages/partner/FormPartnerSignup";
 
 Vue.use(Router)
 
@@ -21,6 +22,7 @@ export default new Router({
         {path: '/blog', component: BlogHome},
         {path: '/post', component: Post},
         {path: '/partner/signup', component: SignUp},
+        {path: '/partner/signup/:token', component: FormPartnerSignup},
         {path: '/login', component: Login},
         {path: '/checkout', component: Checkout},
         {path: '/services/seguros', component: Seguros},
