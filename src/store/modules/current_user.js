@@ -27,7 +27,7 @@ const mutations = {
 }
 
 const actions = {
-    saveCurrentUser({commit, getters}, user) {
+    saveCurrentUser({commit, getters}, user) { // eslint-disable-line no-unused-vars
         commit('authenticated')
         commit('setUser', user)
     },

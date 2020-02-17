@@ -13,7 +13,7 @@
 </template>
 
 <script>
-    import axios from 'axios'
+    import authentication from '../services/authentication';
 
     export default {
         name: "Login",
@@ -27,15 +27,16 @@
             }
         },
         methods: {
-            login: function () {
-                this.checkForm()
-                axios.post('https://epesados-backend.herokuapp.com/api/v1/users/login', this.credentials, {headers: {}})
-                    .then((res) => {
-                        localStorage.set('token', JSON.stringify(res.data.token));
-                        window.console.log(res)
-                    })
-                    .catch(e => window.console.log(e))
-            },
+                login() {
+                    // e.preventDefault()
+                    authentication.login(this.credentials)
+                        .then(() => {
+                            this.$router.push({name: 'Home'})
+                        })
+                        .catch(reason => {
+                            window.console.log(reason)
+                        })
+                },
             checkForm: function () {
                 if (this.name && this.age) {
                     return true;

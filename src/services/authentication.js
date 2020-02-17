@@ -1,5 +1,5 @@
 import store from '../store/store'
-import api from '../router/axios/api'
+import api from './api'
 import BrowserStorage from './browser-storage'
 import {hasPermission} from "./permissions";
 
@@ -7,7 +7,7 @@ const authentication = {
     isUserLogged: store.state.currentUser.checkIfUserAreLoggedIn,
     login: ({email, password}) => {
         return api
-            .post('/auth/login', {email, password})
+            .post('v1/users/login', {email, password})
             .then((response) => {
                 const user = response.data.user
                 BrowserStorage.set('access_token', response.data.access_token)
@@ -55,4 +55,4 @@ const authentication = {
     }
 }
 
-export default authentication 
+export default authentication
