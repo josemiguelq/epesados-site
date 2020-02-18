@@ -20,7 +20,7 @@ export default new Router({
         {path: '/', component: Home},
         {path: '/contact', component: Contact},
         {path: '/blog', component: BlogHome},
-        {path: '/post', component: Post},
+        {path: '/post/:id', component: Post},
         {path: '/partner/signup', component: SignUp},
         {path: '/partner/signup/:token', component: FormPartnerSignup},
         {path: '/login', component: Login},

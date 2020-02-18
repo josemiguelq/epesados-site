@@ -1,11 +1,12 @@
 <template>
     <div class="single-post">
-        <img class="img-fluid" src="img/blog/p4.jpg" alt="">
+<!--        <img v-if="!!image" class="img-fluid" :src="image" alt="">-->
         <ul class="tags">
-            <li><a href="#">Seguros</a></li>
+<!--            <li><a href="#">Seguros</a></li>-->
         </ul>
-        <a href="blog-single.html">
+        <a><router-link :to="getRoute()">
             <h1>{{title}}</h1>
+        </router-link>
         </a>
         <p>{{text}}</p>
         <div class="bottom-meta">
@@ -39,6 +40,19 @@
             },
             text: {
                 type: String
+            },
+            image: {
+                type: String,
+                default: ''
+            },
+            id: {
+                type: String,
+                default: ''
+            }
+        },
+        methods: {
+            getRoute(){
+                return "/post/"+this.id;
             }
         }
     }

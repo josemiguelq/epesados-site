@@ -6,23 +6,13 @@
                     <div class="single-post">
                         <img class="img-fluid" src="operador.png" alt="">
                         <a href="#">
-                            <h1>Operador não qualificado = Prejuízo para sua empresa</h1>
+                            <h1>{{getPost().title}}</h1>
                         </a>
                         <div class="content-wrap">
-                            <p>
-                                Já pensou ter um equipamento danificado ou até mesmo a perda de uma carga ou estoque devido a um tombamento, atropelamento, batidas entre máquinas?
+                            <p v-for="(content, index ) in getPost().content"
+                            v-bind:key="index">
+                                {{content}}
                             </p>
-                            <p>
-                                Casos como esses geram uma crise institucional e, consequentemente, perda nos lucros com a produção parada. Os maiores motivos relacionado a esses acidentes são operadores sem atenção e desconhecimento do equipamento. Mas tudo isso pode ser evitado simplesmente se esses profissionais passarem por um treinamento específico.
-                            </p>
-                            <p>
-                                A formação técnica de um operador não é suficiente vale ressaltar. Cabe a empresa também proporcionar ao profissional reciclagens periódicas e diálogos diários sobre a atividade a ser realizada.
-                            </p>
-                            <p>
-                                Aqui você encontra operadores devidamente qualificados, contrate agora mesmo.
-                            </p>
-
-
                         </div>
                         <div class="bottom-meta">
                             <div class="user-details row align-items-center">
@@ -44,11 +34,16 @@
 </template>
 
 <script>
+    import posts from "./posts";
+
     export default {
         name: "Post",
-        props: {
-            title: {
-                type: String
+        methods: {
+            getPost() {
+                // eslint-disable-next-line no-undef
+                return posts.find(p => {
+                    return p.id == this.$route.params.id
+                })
             }
         }
     }
